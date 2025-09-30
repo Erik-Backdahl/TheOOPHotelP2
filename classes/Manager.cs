@@ -18,5 +18,9 @@ namespace TheOOPHotelP2
 		{
 			Console.WriteLine($"{Name} is hosting a meeting for the hotel personell.");
 		}
+		public void PlanBudget()
+		{
+			Console.WriteLine($"{Name} is planning the hotel budget.");
+		}
 	}
 }
