@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjectSkola\\LabbTheOOPHotelP2\\LabbTheOOPHotelP2.csproj": {}
+    "C:\\Chas\\source\\TheOOPHotelP2\\LabbTheOOPHotelP2.csproj": {}
   },
   "projects": {
-    "C:\\ProjectSkola\\LabbTheOOPHotelP2\\LabbTheOOPHotelP2.csproj": {
+    "C:\\Chas\\source\\TheOOPHotelP2\\LabbTheOOPHotelP2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjectSkola\\LabbTheOOPHotelP2\\LabbTheOOPHotelP2.csproj",
+        "projectUniqueName": "C:\\Chas\\source\\TheOOPHotelP2\\LabbTheOOPHotelP2.csproj",
         "projectName": "LabbTheOOPHotelP2",
-        "projectPath": "C:\\ProjectSkola\\LabbTheOOPHotelP2\\LabbTheOOPHotelP2.csproj",
-        "packagesPath": "C:\\Users\\erikb\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjectSkola\\LabbTheOOPHotelP2\\obj\\",
+        "projectPath": "C:\\Chas\\source\\TheOOPHotelP2\\LabbTheOOPHotelP2.csproj",
+        "packagesPath": "C:\\Users\\kiddd\\.nuget\\packages\\",
+        "outputPath": "C:\\Chas\\source\\TheOOPHotelP2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\VisualStudioShared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\erikb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kiddd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

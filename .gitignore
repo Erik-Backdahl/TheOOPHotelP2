@@ -8,6 +8,7 @@
 /obj/LabbTheOOPHotelP2.csproj.nuget.g.props
 /obj/project.assets.json
 /obj/project.nuget.cache
+/bin
 /bin/Debug/net9.0/LabbTheOOPHotelP2.deps.json
 /bin/Debug/net9.0/LabbTheOOPHotelP2.dll
 /bin/Debug/net9.0/LabbTheOOPHotelP2.exe
