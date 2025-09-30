@@ -36,24 +36,24 @@ namespace LabbTheOOPHotelP2
                 switch (menuSelection)
                 {
                     case 0:
-                        Person.AddPerson();
+                        Endpoints.AddPerson(string name, int age, string employeeId, int salary);
                         break;
                     case 1:
-                        Manager.AddManager();
+                        Endpoints.AddManager(string name, int age, string employeeId, int salary, string jobtitle, string department);
                         break;
                     case 2:
-                        Consultant.AddConsultant();
+                        Endpoints.AddConsultant(string name, int age, string employeeId, int salary, string jobtitle, string department, string consultingFirm);
                         break;
-                    case 3:
+                    //case 3:
 
-                        break;
-                    case 10:
+                    //    break;
+                    case 3:
                         Console.WriteLine(hotelList.Average(p => p.Salary));
                         break;
-                    case 11:
+                    case 4:
                         Console.WriteLine(hotelList.Average(p => p.Age));
                         break;
-                    case 99: // Set this to whatever the final menu option number ends up being at the end.
+                    case 5: // Set this to whatever the final menu option number ends up being at the end.
                         Console.WriteLine("\n\t\tHave a nice day!");
                         Environment.Exit(0);
                         break;
