@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace TheOOPHotelP2
+namespace LabbTheOOPHotelP2
 {
 	public class Housekeeper : Person
 	{
-
-
-		public Housekeeper()
+		public Housekeeper(string name, string surname) : base(name, surname)
 		{
 
 		}

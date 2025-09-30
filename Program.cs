@@ -1,2 +1,12 @@
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using System;
+
+namespace LabbTheOOPHotelP2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var Person = new Person("john", "qwer");
+        }
+    }
+}

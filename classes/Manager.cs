@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace TheOOPHotelP2
+namespace LabbTheOOPHotelP2
 {
 	internal class Manager : Person
 	{
 		public string Department { get; set; }
 
 
-		public Manager(string department, string name)
+		public Manager(string department, string name, string employeID) : base(name, employeID)
 		{
 			Department = department;
 			Name = name;
