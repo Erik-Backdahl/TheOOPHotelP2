@@ -1,3 +1,5 @@
+using TheOOPHotelP2;
+
 class Employee : Person
 {
     string Jobtitle { get; set; }
