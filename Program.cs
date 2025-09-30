@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 
 namespace LabbTheOOPHotelP2
 {
@@ -23,8 +24,6 @@ namespace LabbTheOOPHotelP2
                 string[] menuOptions =
                 [
                     "Add Employee",
-                    "Add Manager",
-                    "Add Consultant",
                     "Calculate Average Salary",
                     "Calculate Average Age",
                     "- QUIT"
@@ -36,24 +35,15 @@ namespace LabbTheOOPHotelP2
                 switch (menuSelection)
                 {
                     case 0:
-                        Endpoints.AddPerson();
+                        PersonMenu();
                         break;
                     case 1:
-                        Endpoints.AddManager();
-                        break;
-                    case 2:
-                        Endpoints.AddConsultant();
-                        break;
-                    //case 3:
-
-                    //    break;
-                    case 3:
                         Console.WriteLine(hotelList.Average(p => p.Salary));
                         break;
-                    case 4:
+                    case 2:
                         Console.WriteLine(hotelList.Average(p => p.Age));
                         break;
-                    case 5: // Set this to whatever the final menu option number ends up being at the end.
+                    case 3:
                         Console.WriteLine("\n\t\tHave a nice day!");
                         Environment.Exit(0);
                         break;
@@ -63,6 +53,50 @@ namespace LabbTheOOPHotelP2
                 Console.ReadKey();
             }
         }
+
+        public void PersonMenu()
+        {
+            bool isRunning = true;
+
+            while (isRunning)
+            {
+                string[] menuHeader =
+                [
+                    "  Who are you adding?",
+                ];
+
+                string[] menuOptions =
+                [
+                    "Employee",
+                    "Manager",
+                    "Consultant",
+                    "Housekeeper",
+                ];
+
+                int menuSelection = Menu.Render(menuHeader, menuOptions);
+
+
+                switch (menuSelection)
+                {
+                    case 0:
+                        EndPoint.AddPerson();
+                        break;
+                    case 1:
+                        EndPoint.AddManager();
+                        break;
+                    case 2:
+                        EndPoint.AddConsultant();
+                        break;
+                    case 3:
+                        EndPoint.AddHouseKeeper();
+                        break;
+                }
+
+
+
+
+                }
+
 
         public void Statistics()
         {
