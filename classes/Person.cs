@@ -23,5 +23,13 @@ namespace LabbTheOOPHotelP2
         {
             Console.WriteLine($"Hej, mitt namn är: {Name} och jag är: {Age} år gammal.");
         }
+        double averageAge = hotelStaff.Average(p => p.Age);
+        decimal totalSalary = hotelStaff.Sum(p => p.Salary);
+
+        public void Statistics()
+        {
+            Console.WriteLine($"The average age is: {averageAge}");
+            Console.WriteLine($"The total salary is: {totalSalary}");
+        }
     }
 }
