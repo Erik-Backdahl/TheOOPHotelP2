@@ -22,10 +22,12 @@ namespace LabbTheOOPHotelP2
 
                 string[] menuOptions =
                 [
-                    "(1): Add Employee",
-                    "(2): Add Manager",
-                    "(3): Add Consultant",
-                    "(4): calculate average salary"
+                    "Add Employee",
+                    "Add Manager",
+                    "Add Consultant",
+                    "Calculate Average Salary",
+                    "Calculate Average Age",
+                    "- QUIT"
                 ];
 
                 int menuSelection = Menu.Render(menuHeader, menuOptions);
@@ -33,21 +35,27 @@ namespace LabbTheOOPHotelP2
 
                 switch (menuSelection)
                 {
-                    case 1:
+                    case 0:
                         
+                        break;
+                    case 1:
                         break;
                     case 2:
                         break;
                     case 3:
+                        Console.WriteLine(hotelList.Average(p => p.Salary));
                         break;
                     case 4:
+                        Console.WriteLine(hotelList.Average(p => p.Age));
                         break;
-                    case 9:
+                    case 99: // Set this to whatever the final menu option number ends up being at the end.
+                        Console.WriteLine("\n\t\tHave a nice day!");
+                        Environment.Exit(0);
                         break;
                 }
-                Console.WriteLine(hotelList.Average(p => p.Age));
-                Console.WriteLine(hotelList.Average(p => p.Salary));
-                Console.ReadLine();
+         
+                Console.WriteLine("\n\nPlease press any key . . .\n");
+                Console.ReadKey();
             }
         }
 
