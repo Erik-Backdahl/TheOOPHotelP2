@@ -45,8 +45,16 @@ namespace LabbTheOOPHotelP2
                     case 9:
                         break;
                 }
+                Console.WriteLine(hotelList.Average(p => p.Age));
+                Console.WriteLine(hotelList.Average(p => p.Salary));
                 Console.ReadLine();
             }
+        }
+
+        public void Statistics()
+        {
+            //Console.WriteLine($"The average age is: {averageAge}");
+            //Console.WriteLine($"The total salary is: {totalSalary}");
         }
     }
 }
