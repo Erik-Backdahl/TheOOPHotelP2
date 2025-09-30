@@ -3,10 +3,9 @@
 
 namespace LabbTheOOPHotelP2
 {
-	internal class Consultant(string name, string ssn, decimal hourlyRate, string consultingFirm) : Person(name, ssn)
+	internal class Consultant : Employee
 	{
-		public decimal HourlyRate { get; set; } = hourlyRate;
-		public string ConsultingFirm { get; set; } = consultingFirm;
+		public required string ConsultingFirm { get; set; }
 
         public void GiveAdvice()
 		{

@@ -4,15 +4,14 @@ namespace LabbTheOOPHotelP2
 
     public class Person
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string EmployeeId { get; set; }
-        public DateTime StartDate { get; set; }
-        public decimal Salary { get; set; }
-        public Person(string name, string employeID)
+        public required string Name { get; set; }
+        public required int Age { get; set; }
+        public required string EmployeeId { get; set; }
+        public DateTime StartDate { get; set; } = DateTime.Now;
+        public required decimal Salary { get; set; } = 0;
+        public Person()
         {
-            Name = name;
-            EmployeeId = employeID;
+
         }
 
         public void PrintInfo()

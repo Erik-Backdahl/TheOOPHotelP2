@@ -7,22 +7,25 @@ namespace LabbTheOOPHotelP2
         static void Main(string[] args)
         {
             Console.CursorVisible = false;
-            var Person = new Person("john", "qwer");
+
+            var hotelList = List.GetDefaultList();
             bool isRunning = true;
+
             while (isRunning)
             {
                 string[] menuHeader =
                 [
                     "  Welcome to the OOP Hotel 2: Electric Hoteldoo!\n",
                     "\t\t\t       (press Q to quit)\n",
-                    "   What would you like to do today?\n",                    
+                    "   What would you like to do today?\n",
                 ];
 
                 string[] menuOptions =
                 [
-                    "Menu option 1",
-                    "Menu option 2",
-                    "Menu option 3",
+                    "(1): Add Employee",
+                    "(2): Add Manager",
+                    "(3): Add Consultant",
+                    "(4): calculate average salary"
                 ];
 
                 int menuSelection = Menu.Render(menuHeader, menuOptions);
@@ -30,13 +33,19 @@ namespace LabbTheOOPHotelP2
 
                 switch (menuSelection)
                 {
-                    case 0:
-                        break;
                     case 1:
+                        
                         break;
                     case 2:
                         break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 9:
+                        break;
                 }
+                Console.ReadLine();
             }
         }
     }

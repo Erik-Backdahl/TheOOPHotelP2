@@ -1,16 +1,17 @@
 ﻿using System;
+using LabbTheOOPHotelP2;
 
 public class List
 {
-	public List()
-	{
+    public static List<Person> GetDefaultList()
+    {
         List<Person> hotelStaff = new List<Person>();
 
-        hotelStaff.Add(new Manager("Operations", "Alice Johnson", "M001"));
-        hotelStaff.Add(new Employee("Bob Smith", "E001", "Receptionist", "Front Desk"));
-        hotelStaff.Add(new Housekeeper("Cathy Brown", "H001"));
-        hotelStaff.Add(new Consultant("David Lee", "C001", 150.00m, "Hotel Consulting Inc."));
-        hotelStaff.Add(new Employee("Eva Green", "E002", "Chef", "Kitchen"));
+        hotelStaff.Add(new Manager() { Name = "Johnson", Age = 26, Department = "Operations", EmployeeId = "E001", Jobtitle = "Production", Salary = 400 });
+        hotelStaff.Add(new Employee() { Name = "Bob Smith", Age = 20, Department = "Service", Jobtitle = "Receptionist", EmployeeId = "E004", Salary = 200 });
+        hotelStaff.Add(new Housekeeper() { Name = "Malin", Age = 19, EmployeeId = "E003", Salary = 220 });
+        hotelStaff.Add(new Consultant() { Name = "David Lee", Age = 20, ConsultingFirm = "MultiMinds", Salary = 600, Jobtitle = "Freelance", Department = "Service", EmployeeId = "E010" });
+        hotelStaff.Add(new Employee() { Name = "Eva Green", EmployeeId = "E002", Jobtitle = "Chef", Age = 23, Department = "Kitchen", Salary = 200 });
         foreach (var person in hotelStaff)
         {
             person.PrintInfo();
@@ -33,5 +34,7 @@ public class List
                 consultant.GiveAdvice();
             }
         }
+
+        return hotelStaff;
     }
 }
