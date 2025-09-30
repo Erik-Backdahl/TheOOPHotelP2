@@ -36,16 +36,21 @@ namespace LabbTheOOPHotelP2
                 switch (menuSelection)
                 {
                     case 0:
-                        
+                        Person.AddPerson();
                         break;
                     case 1:
+                        Manager.AddManager();
                         break;
                     case 2:
+                        Consultant.AddConsultant();
                         break;
                     case 3:
+
+                        break;
+                    case 10:
                         Console.WriteLine(hotelList.Average(p => p.Salary));
                         break;
-                    case 4:
+                    case 11:
                         Console.WriteLine(hotelList.Average(p => p.Age));
                         break;
                     case 99: // Set this to whatever the final menu option number ends up being at the end.
