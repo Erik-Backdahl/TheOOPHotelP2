@@ -36,13 +36,13 @@ namespace LabbTheOOPHotelP2
                 switch (menuSelection)
                 {
                     case 0:
-                        Endpoints.AddPerson(string name, int age, string employeeId, int salary);
+                        Endpoints.AddPerson();
                         break;
                     case 1:
-                        Endpoints.AddManager(string name, int age, string employeeId, int salary, string jobtitle, string department);
+                        Endpoints.AddManager();
                         break;
                     case 2:
-                        Endpoints.AddConsultant(string name, int age, string employeeId, int salary, string jobtitle, string department, string consultingFirm);
+                        Endpoints.AddConsultant();
                         break;
                     //case 3:
 
