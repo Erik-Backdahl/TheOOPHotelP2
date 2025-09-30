@@ -33,5 +33,17 @@ public class List
                 consultant.GiveAdvice();
             }
         }
+        List<Person> staff = new List<Person>();
+
+        staff.Add(Alice Johnson);  //Manager
+        staff.Add(Bob Smith);  //Employee
+        staff.Add(Cathy Brown); //Housekeeper
+        staff.Add(David Lee);  //Consultant
+        staff.Add(Eva Green);  //Employee
+
+        foreach (Person person in staff)
+        {
+            person.DoWork();
+        }
     }
 }
