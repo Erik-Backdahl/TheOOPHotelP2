@@ -15,7 +15,7 @@ namespace TheOOPHotelP2
 			ConsultingFirm = consultingFirm;
 		}
 		
-		public GiveAdvice()
+		public void GiveAdvice()
 		{
 			Console.WriteLine($"{Name} gives advice on how the hotel may improve their routines and services.");
 		}

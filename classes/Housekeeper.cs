@@ -12,7 +12,7 @@ namespace TheOOPHotelP2
 		}
 
 
-		public override Work()
+		public void Work()
 		{
 			Console.WriteLine($"{Name} cleans the hotel rooms.");
 		}
