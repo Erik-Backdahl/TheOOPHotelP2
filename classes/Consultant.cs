@@ -3,7 +3,7 @@
 
 namespace TheOOPHotelP2
 {
-	internal class Consultant
+	internal class Consultant : Person
 	{
 		public decimal HourlyRate { get; set; }
 		public string ConsultingFirm { get; set; }
