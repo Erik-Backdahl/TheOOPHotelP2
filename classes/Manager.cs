@@ -7,7 +7,7 @@ namespace TheOOPHotelP2
 		public string Department { get; set }
 
 
-		public Manager(string department) : base(name)
+		public Manager(string department)
 		{
 			Department = department;
 			Name = name;
@@ -16,7 +16,7 @@ namespace TheOOPHotelP2
 
 		public void HoldMeeting()
 		{
-			Console.WriteLine($"{name} is hosting a meeting for the hotel personell.");
+			Console.WriteLine($"{Name} is hosting a meeting for the hotel personell.");
 		}
 	}
 }

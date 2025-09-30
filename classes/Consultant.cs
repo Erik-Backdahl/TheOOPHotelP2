@@ -9,7 +9,7 @@ namespace TheOOPHotelP2
 		public string ConsultingFirm { get; set; }
 
 
-		public Consultant(decimal hourlyRate, string consultingFirm) : base(name)
+		public Consultant(decimal hourlyRate, string consultingFirm)
 		{
 			HourlyRate = hourlyRate;
 			ConsultingFirm = consultingFirm;
@@ -17,7 +17,7 @@ namespace TheOOPHotelP2
 		
 		public GiveAdvice()
 		{
-			Console.WriteLine($"{name} gives advice on how the hotel may improve their routines and services.");
+			Console.WriteLine($"{Name} gives advice on how the hotel may improve their routines and services.");
 		}
 	}
 }
