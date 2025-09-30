@@ -18,9 +18,13 @@ namespace TheOOPHotelP2
             StartDate = startDate;
             Salary = salary;
         }
-         public void PrintInfo()
+        public void PrintInfo()
         {
-         Console.Writeline($"Name: {Name}, Age: {Age}");
+            Console.Writeline($"Name: {Name}, Age: {Age}");
+        }
+        public void Introduce()
+        {
+            Console.WriteLine($"Hej, mitt namn är: {Name} och jag ör: {Age} år gammal.");
         }
     }
 }
